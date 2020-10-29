@@ -1,0 +1,20 @@
+3.13
+1) Welche eingebauten Datentypen zum Speichern von Ganzzahlen stehen Ihnen zur Verfügung?
+int, long, short
+
+2) Mit welchen Ganzzahltypen können Sie einzelne Zeichen darstellen und einlesen?
+
+
+3) Ist eine Integer-Variable per Standard vorzeichenlos oder vorzeichenbehaftet, und wie können Sie das beeinflussen?
+standardmässig vorzeichen behaftet, kann mithilfe vom keyword "unsigend" geändert werden
+
+4) Nennen Sie die grundlegenden Fließkommatypen.
+float, double, single
+
+5) Welches Schlüsselwort müssen Sie vor einen Datentyp setzen, wenn der Wert zur Laufzeit des Programms nicht mehr geändert werden soll?
+const
+
+6) Ermitteln Sie den minimalen und maximalen möglichen Wert (und zudem die Anzahl der Bits) von long long auf Ihrem System.
+std::numeric_limits<long>::min();
+std::numeric_limits<long>::max();
+std::numeric_limits<long>::digits();

@@ -1,0 +1,43 @@
+1) Was sind Typumwandlungen, und welche Arten von Umwandlungen gibt es?
+Typumwandlungen bezeichnet das Konvertieren von Werten in einen anderen Typen. Dieser wird üblicherweise mit static_cast<> durchgeführt
+
+2) Welcher Wert wird in den folgenden Zeilen ausgegeben?
+
+int i = 1;
+std::cout << i-- << '\n';
+std::cout << ++i << '\n';
+std::cout << i++ << '\n';
+std::cout << ++i << '\n';
+-------------------
+AUSGABE:
+1
+1
+1
+3
+
+3) Welche Werte werden hier ausgegeben?
+
+int ival1, ival2 = 2;
+float fval1 = 3.5f;
+
+ival1 = fval1;
+std::cout << ival1 << '\n';
+std::cout << fval1 / ival2 << '\n';
+std::cout << static_cast<int>(fval1 / ival2) << '\n';
+std::cout << static_cast<float>(fval1 / ival2) << '\n';
+
+----------------------
+3
+1.75
+1
+1.75
+
+4)Schreiben Sie ein Listing, das eine Strecke in Kilometern (km) abfragt. Diesen eingelesenen Wert rechnen Sie in das Streckenmaß Meilen (mile) um (1 Meile = 1,6 km). Verwenden Sie double als Basisdatentyp.
+
+double km;
+WriteLine("Enter km:");
+std::cin >> km;
+
+auto result = km * 1.6;
+WriteLine(std::to_string(result));
+
